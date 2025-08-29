@@ -2,7 +2,10 @@
   "name": "aave-merkl-token-whitelist",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/AaveChan/aave-merkl-token-whitelist.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaveChan/aave-merkl-token-whitelist.git"
+  },
   "author": "ACI",
   "license": "MIT",
   "private": false,
