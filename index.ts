@@ -1,2 +1,2 @@
 export * from "./whitelist";
-export * from "./addtional-incentive-info";
+export * from "./addtional-incentive-infos";
