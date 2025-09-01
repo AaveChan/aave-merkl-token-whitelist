@@ -57,7 +57,7 @@ const otherTokensWhitelisted = [
   "0x0AD8ac496B4280bC3B36fb1b6372abdEc8eE7C54", // Aave Horizon RWA USDC (wrapped)
 ].map((address) => checksumAddress(address as Address));
 
-export const whitelistedRewardTokens = [
+export const whitelistedRewardTokens = new Set([
   ...allAaveAssets.flatMap((assets) => getUnderlyingAndAToken(assets)),
   ...otherTokensWhitelisted,
-];
+]);
