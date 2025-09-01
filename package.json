@@ -1,5 +1,5 @@
 {
-  "name": "aave-merkl-token-whitelist",
+  "name": "@aavechan/aave-merkl-token-whitelist",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
