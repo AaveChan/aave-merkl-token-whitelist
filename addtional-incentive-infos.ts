@@ -1,6 +1,6 @@
 import { AaveV3Ethereum } from "@bgd-labs/aave-address-book";
 
-type ReserveIncentiveAdditionalData = {
+export type ReserveIncentiveAdditionalData = {
   customClaimMessage?: string;
   customMessage?: string;
   customForumLink?: string;
