@@ -53,9 +53,10 @@ const getUnderlyingAndAToken = (assets: {
 const otherTokensWhitelisted = [
   "0x04eadd7b10ea9a484c60860aea7a7c0aec09b9f0", // aUSDtb wrapper contract
   "0x3a4de44b29995a3d8cd02d46243e1563e55bcc8b", // Aave Ethereum USDe (wrapped)
-  "0xdcc1bcc6ecd1e63cba178c289bc1da9f757a2ef4", // Aave Line weETH (wrapper)
+  "0xdcc1bcc6ecd1e63cba178c289bc1da9f757a2ef4", // Aave Linea weETH (wrapper)
   "0x503D751B13a71D8e69Db021DF110bfa7aE1dA889", // Aave Horizon RWA RLUSD (wrapped)
   "0x0AD8ac496B4280bC3B36fb1b6372abdEc8eE7C54", // Aave Horizon RWA USDC (wrapped)
+  "0xb8021254f00C1aFb67b861f274cea175FB97c2Af", // aSCR Scroll (wrapper)
 ].map((address) => checksumAddress(address as Address));
 
 export const whitelistedRewardTokens = new Set([
