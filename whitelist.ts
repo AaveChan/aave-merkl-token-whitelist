@@ -57,6 +57,7 @@ const otherTokensWhitelisted = [
   "0x503D751B13a71D8e69Db021DF110bfa7aE1dA889", // Aave Horizon RWA RLUSD (wrapped)
   "0x0AD8ac496B4280bC3B36fb1b6372abdEc8eE7C54", // Aave Horizon RWA USDC (wrapped)
   "0xb8021254f00C1aFb67b861f274cea175FB97c2Af", // aSCR Scroll (wrapper)
+  "0x2c63f9da936624Ac7313b972251D340260A4bF08", // aARB Arbitrum (wrapper)
 ].map((address) => checksumAddress(address as Address));
 
 export const whitelistedRewardTokens = new Set([
