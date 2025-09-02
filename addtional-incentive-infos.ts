@@ -1,4 +1,4 @@
-import { AaveV3Ethereum } from "@bgd-labs/aave-address-book";
+import { AaveV3Arbitrum, AaveV3Ethereum } from "@bgd-labs/aave-address-book";
 
 export type ReserveIncentiveAdditionalData = {
   customClaimMessage?: string;
@@ -19,5 +19,14 @@ export const additionalIncentiveInfo: Record<
       "You must supply USDtb to receive incentives. To be eligible, you must not be borrowing any USDtb.",
     customClaimMessage: "Rewards will be claimable starting in early August.",
     customForumLink: "https://x.com/ethena_labs/status/1950194502192550149",
+  },
+  // DRIPS campaigns
+  [AaveV3Arbitrum.ASSETS.WETH.A_TOKEN]: {
+    customMessage:
+      "You must supply WETH without holding any WETH debt. This is a program initiated and implemented by the Arbitrum DAO in collaboration with Merkl.",
+  },
+  [AaveV3Arbitrum.ASSETS.WETH.V_TOKEN]: {
+    customMessage:
+      "You must supply wstETH, weETH, ezETH, or rsETH as the collateral for the ETH borrow position in order to be eligible for rewards. This is a program initiated and implemented by the Arbitrum DAO in collaboration with Merkl.",
   },
 };
